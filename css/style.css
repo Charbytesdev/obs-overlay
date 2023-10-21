@@ -1,3 +1,13 @@
+:root {
+  --neon-red: #ff3131;
+  --neon-pink: #ff10f0;
+  --neon-purple: #9d00ff;
+  --neon-blue: #1f51ff;
+  --neon-green: #39ff14;
+  --neon-orange: #ff5f1f;
+  --neon-gold: #fdbd01;
+}
+
 body {
   background-color: transparent;
 }
@@ -9,4 +19,26 @@ body {
   animation-name: color-change;
   animation-duration: 4s;
   animation-iteration-count: infinite;
+}
+
+@keyframes color-change {
+  from {
+    border-color: var(--neon-red);
+  }
+
+  25% {
+    border-color: var(--neon-purple);
+  }
+  50% {
+    border-color: var(--neon-blue);
+  }
+  75% {
+    border-color: var(--neon-green);
+  }
+  100% {
+    border-color: var(--neon-gold);
+  }
+  to {
+    border-color: var(--neon-red);
+  }
 }
